@@ -1,0 +1,55 @@
+/* Estilos generales para los botones */
+button {
+    background-color: #4CAF50; /* Verde agradable */
+    color: white; /* Texto blanco */
+    font-size: 16px;
+    font-weight: bold;
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cursor de mano al pasar el ratón */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animación suave */
+    margin: 10px; /* Espaciado entre botones */
+  }
+  
+  /* Efecto hover para los botones */
+  button:hover {
+    background-color: #45a049; /* Un tono más oscuro de verde */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  }
+  
+  /* Estilos específicos para el botón de Login */
+  button:nth-of-type(1) {
+    background-color: #4CAF50; /* Verde para login */
+  }
+  
+  /* Estilos específicos para el botón de Logout */
+  button:nth-of-type(2) {
+    background-color: #f44336; /* Rojo para logout */
+  }
+  
+  button:nth-of-type(2):hover {
+    background-color: #d32f2f; /* Tono más oscuro de rojo */
+  }
+  /* Añade un margen superior al contenido para evitar que quede detrás del nav */
+:host {
+  display: block;
+  margin-top: 60px; /* Ajusta el margen según la altura del nav (en este caso, 60px) */
+  padding: 20px; /* Opcional: Para darle un poco de espacio al contenido */
+}
+
+/* Opcional: Estilo básico para los elementos */
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6; /* Mejora la legibilidad */
+}

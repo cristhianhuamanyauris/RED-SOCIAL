@@ -18,9 +18,10 @@ export const routes: Routes = [
         loadComponent: ()=> import('./asignaturas/asignaturas.component').then(m=>m.AsignaturasComponent) //lazzy loading
     },
     { 
-        path: 'asignaturas/:codigo', 
+        path: 'asignaturas/:nomb', 
         component: DetalleComponent,
-        canActivate: [authGuard]},
+        canActivate: [authGuard]
+    },
     { 
         path: 'login',
         loadComponent: ()=> import('./login/login.component').then(m=>m.LoginComponent) //lazzy loading

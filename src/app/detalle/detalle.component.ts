@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CursosService } from '../services/cursos.service';
 import { Curso } from '../interfaces/curso';
-
+import { P } from '../interfaces/p';
+import { PsService } from '../services/ps.service';
 @Component({
   selector: 'app-detalle',
   standalone: true,
@@ -11,20 +12,20 @@ import { Curso } from '../interfaces/curso';
   styleUrl: './detalle.component.css'
 })
 export class DetalleComponent {
-  codigo: string | null = null;
-  curso: Curso | undefined;
+  nomb: string | null = null;
+  p: P | undefined;
   
   constructor(
     public route:ActivatedRoute,
-    public cursosService: CursosService,
+    public psService: PsService,
   ){
 
   }
 
   ngOnInit(){
     this.route.paramMap.subscribe(params => {
-      this.codigo = params.get('codigo') ?? '';
-      this.curso = this.cursosService.getCursoPorCodigo(this.codigo);
+      this.nomb = params.get('nomb') ?? '';
+      this.p = this.psService.getPPorNomb(this.nomb);
     });
   }
 }

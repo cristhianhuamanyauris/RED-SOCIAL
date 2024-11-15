@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 import { CursosService } from '../services/cursos.service';
 import { Curso } from '../interfaces/curso';
 import { RouterLink } from '@angular/router';
-
+import { P } from '../interfaces/p';
+import { PsService } from '../services/ps.service';
 @Component({
   selector: 'app-asignaturas',
   standalone: true,
@@ -13,13 +14,13 @@ import { RouterLink } from '@angular/router';
 })
 
 export class AsignaturasComponent {
-  cursos?:Curso[];  //cursos:Curso[] = []
+  ps?:P[];  //cursos:Curso[] = []
 
-  constructor(public cursosService:CursosService){
+  constructor(public psService:PsService){
 
   }
 
   ngOnInit(){
-    this.cursos = this.cursosService.getCursos(); 
+    this.ps = this.psService.getPs(); 
   }
 }
