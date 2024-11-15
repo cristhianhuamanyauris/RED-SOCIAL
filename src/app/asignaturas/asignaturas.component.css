@@ -1,0 +1,23 @@
+/* Añade un margen superior al contenido para evitar que quede detrás del nav */
+:host {
+    display: block;
+    margin-top: 60px; /* Ajusta el margen según la altura del nav (en este caso, 60px) */
+    padding: 20px; /* Opcional: Para darle un poco de espacio al contenido */
+  }
+  
+  /* Opcional: Estilo básico para los elementos */
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6; /* Mejora la legibilidad */
+  }
+  

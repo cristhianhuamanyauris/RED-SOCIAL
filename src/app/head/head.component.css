@@ -1,0 +1,44 @@
+/* Asegura que el nav esté fijo en la parte superior */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 10px 0;
+    z-index: 1000; /* Para que esté encima de otros elementos */
+  }
+  
+  /* Estiliza la lista de navegación */
+  nav ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Muestra los elementos en línea */
+    gap: 20px; /* Espaciado entre los enlaces */
+  }
+  
+  /* Estiliza los enlaces */
+  nav ul li a {
+    text-decoration: none; /* Quita el subrayado */
+    color: white; /* Color del texto */
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Animación suave para hover */
+  }
+  
+  /* Cambia el color del enlace al pasar el mouse */
+  nav ul li a:hover {
+    color: #f0a500; /* Color amarillo/anaranjado al pasar el ratón */
+  }
+  
+  /* Da margen superior al resto de la página para que no quede oculta detrás del nav */
+  body {
+    margin: 0;
+    padding-top: 60px; /* Ajusta según la altura de tu barra de navegación */
+  }
+  
